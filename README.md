@@ -1,1 +1,1 @@
-Initial commit
+Angular application using browserify
