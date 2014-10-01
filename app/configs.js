@@ -2,7 +2,7 @@ var Configs = {
 	router: function($stateProvider, $urlRouterProvider) {
 		this.contacts = {
 			name: 'contacts',
-			url: '/contacts',
+			url: '',
 			templateUrl: 'views/contacts.html',
 			controller: 'ContactCtrl as Contact'
 		};
