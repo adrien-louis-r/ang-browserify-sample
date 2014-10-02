@@ -1,11 +1,11 @@
-<div class="col-md-3">
+<div class="col-md-2">
 	<ul class="nav nav-pills nav-stacked">
 		<li ng-repeat="contact in Contact.contacts"
-			ng-click="Contact.selectContact(contact.name)"
-			ng-class="{ active: Contact.isSelectedContact(contact.name) }">
+			ng-click="Contact.selectContact(contact.id)"
+			ng-class="{ active: Contact.isSelectedContact(contact.id) }">
 			<a ui-sref="contacts.info({ id : contact.id })">{{ contact.name }}</a>
 		</li>
 	</ul>
 </div>
 
-<div ui-view class="col-md-9"></div>
+<div ui-view class="col-md-10"></div>

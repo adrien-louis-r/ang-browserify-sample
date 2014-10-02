@@ -3,12 +3,12 @@ function ContactCtrl(ContactService) {
     this.contacts = this.ContactService.all();
 };
  
-ContactCtrl.prototype.isSelectedContact = function(contact) {
-    return this.ContactService.selectedContact == contact;
+ContactCtrl.prototype.isSelectedContact = function(contactId) {
+    return this.ContactService.selectedContact.id === contactId;
 };
  
-ContactCtrl.prototype.selectContact = function(contact) {
-    this.ContactService.selectContact(contact);
+ContactCtrl.prototype.selectContact = function(contactId) {
+    this.ContactService.selectContact(contactId);
 };
  
 module.exports = ContactCtrl;
